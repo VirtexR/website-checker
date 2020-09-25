@@ -3,7 +3,7 @@ check website status made in python
 <br>Work him or not. =)
 <br>Send code 200... 404 etc...
 
-you need create file in derectory, list websites why we check <strong>data.csv</strong>
+you need create file in derectory <strong>data.csv</strong>, its list websites why we check
 <pre>
 1,https://google.com/
 2,https://github.com/
