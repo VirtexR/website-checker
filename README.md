@@ -1,8 +1,8 @@
 # website-checker telegram edition
 Files
-<strong>website-checker-telegram.py</strong> - main file
-<strong>settings.ini</strong> - in directory for main file, need specify settings Telegram bot api and telegramUserId , and timer sleep
-<strong>data.csv</strong> - in directory for main file
+<br><strong>website-checker-telegram.py</strong> - main file
+<br><strong>settings.ini</strong> - in directory for main file, need specify settings Telegram bot api and telegramUserId , and timer sleep
+<br><strong>data.csv</strong> - in directory for main file
 
 
 
