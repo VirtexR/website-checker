@@ -1,6 +1,16 @@
-# website-checker
+# website-checker telegram edition
+Files
+<strong>website-checker-telegram.py</strong> - main file
+<strong>settings.ini</strong> - in directory for main file, need specify settings Telegram bot api and telegramUserId , and timer sleep
+<strong>data.csv</strong> - in directory for main file
+
+
+
+
+
+
+# website-checker main.py
 check website status made in python
-<br>Work him or not. =)
 <br>Send code 200... 404 etc...
 
 you need create file in derectory <strong>data.csv</strong>, its list websites why we check
