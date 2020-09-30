@@ -73,7 +73,7 @@ else:
 
 try:
     config['Settings']['sitelist']
-    print(config['Settings']['sitelist'])
+    print('Открываем: ' + config['Settings']['sitelist'])
 except:
     print('Параметр sitelist не найден в settings.ini')
     stopActions()
@@ -85,7 +85,6 @@ try:
         stopActions()
     else:
         config['Settings']['sleeptime']
-
 except:
     print('Параметр sleeptime не найден в settings.ini или указан не коректно')
     stopActions()
@@ -102,11 +101,15 @@ while True:
                 except:
                     print(Fore.RED)
                     print('Ошибка! ' + row[1])
+                    print('=======================================')
+                    print(Style.RESET_ALL)
                     #если бот не может отправить сообщение
                     try:
                         bot.send_message(config['Telegram']['telegramUserId'], 'Ошибка!  ' + row[1])
                     except telebot.apihelper.ApiTelegramException:
+                        print('Ошибка!  ' + row[1])
                         print('Бот не может отправить сообщение, возможно api указан не верно или сервис не доступен')
+                        print('=======================================')
                     print(Style.RESET_ALL)
 
         time.sleep(int(config['Settings']['sleeptime'])) #таймер сна в сеундах после заного пойдет сканировать сайты
